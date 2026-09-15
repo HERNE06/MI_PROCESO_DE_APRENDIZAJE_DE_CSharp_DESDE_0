@@ -12,7 +12,7 @@ namespace PRACTICAS_DE_APRENDIZAJE
     {
         static void Main(string[] args)
         {
-            LlamarSumarDigitos();
+            LlamarIniciales();
         }
         /*_____________________________________________________________________________________________________________*/
         static void Ejercicio1_1_1()
@@ -6193,7 +6193,7 @@ namespace PRACTICAS_DE_APRENDIZAJE
             int resultado = 0;
             for(int i = 0; i<numeros.Length; i++)
             {
-                resultado += numeros[i]; 
+                resultado += int.Parse(numeros[i].ToString()); 
             }
 
             return resultado;
@@ -6211,32 +6211,72 @@ namespace PRACTICAS_DE_APRENDIZAJE
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_5_6()
-        {
-            /* Crear una función que reciba una letra y un número, y escriba un "triángulo" formado por esa letra, que tenga como anchura inicial la que se 
-             * ha indicado. Por ejemplo, si la letra es * y la anchura es 4, debería escribir
-                ****
-                ***
-                **
-                *
-                */
+        //ejercicio5_5_6
+        /* Crear una función que reciba una letra y un número, y escriba un "triángulo" formado por esa letra, que tenga como anchura inicial la que se 
+        * ha indicado. Por ejemplo, si la letra es * y la anchura es 4, debería escribir
+        ****
+        ***
+        **
+        *
+        */
 
+        public static void Triangula(int num, char letra)
+        {
+            for(int i = 0; i < num; i++)
+            {
+                for(int j = i; j < num; j++)
+                {
+                    Console.Write(letra);
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public static void LlamarTriangulo() 
+        {
+            Console.Write("Numero: ");
+            int num = Convert.ToInt16(Console.ReadLine());
+
+            Console.Write("Letra: ");
+            char letra = Convert.ToChar(Console.ReadLine());
+
+            Triangula(num, letra);
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_7_1()
-        {
-            /*Crear una función "intercambia", que intercambie el valor de los dos números enteros que se le indiquen como parámetro. */
+        //ejercicio5_7_1
+        /*Crear una función "intercambia", que intercambie el valor de los dos números enteros que se le indiquen como parámetro. */
 
+        public static void Intercambiar(ref int num1, ref int num2)
+        {
+            int temporal = num1;
+            num1 = num2;
+            num2 = temporal;
+        }
+
+        public static void LlamarIntercambiar()
+        {
+            int num1 = 10;
+            int num2 = 20;
+            Console.Write("Num1: {0} \nNum2: {1}", num1, num2);
+            Intercambiar(ref num1, ref num2);
+            Console.Write("\nNum1: {0} \nNum2: {1}", num1, num2);
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_7_2()
+        //ejercicio5_7_2
+        /* Crear una función "iniciales", que reciba una cadena como "Nacho Cabanes" y devuelva las letras N y C (primera letra, y letra situada tras el primer 
+          * espacio), usando parámetros por referencia.*/
+        public static string Iniciales(string inicial)
         {
-            /* Crear una función "iniciales", que reciba una cadena como "Nacho Cabanes" y devuelva las letras N y C (primera letra, y letra situada tras el primer 
-             * espacio), usando parámetros por referencia.*/
+
+            return inicial;
+        }
+
+        public static void LlamarIniciales()
+        {
 
         }
 
