@@ -12,7 +12,7 @@ namespace PRACTICAS_DE_APRENDIZAJE
     {
         static void Main(string[] args)
         {
-            LlamarIniciales();
+            Pantalla();
         }
         /*_____________________________________________________________________________________________________________*/
         static void Ejercicio1_1_1()
@@ -6269,41 +6269,177 @@ namespace PRACTICAS_DE_APRENDIZAJE
         //ejercicio5_7_2
         /* Crear una función "iniciales", que reciba una cadena como "Nacho Cabanes" y devuelva las letras N y C (primera letra, y letra situada tras el primer 
           * espacio), usando parámetros por referencia.*/
-        public static string Iniciales(string inicial)
+        public static void Iniciales(ref string inicial)
         {
-
-            return inicial;
+            string primeraLetra = inicial[0].ToString();
+            string segundaLetra = "";
+            
+            for(int i = 0; i < inicial.Length; i++) 
+            {
+                if (inicial[i] == ' ') 
+                {
+                    segundaLetra = inicial[i+1].ToString();
+                    break;
+                }
+            }
+            inicial = primeraLetra + " , " + segundaLetra;
         }
 
         public static void LlamarIniciales()
         {
+            Console.WriteLine("Ejercicio de funciones");
+            Console.WriteLine("\nIntroduce una cadena dos pcadenas separadado por un espacio y se te mostrara las inciales de cada cadena:");
+            Console.Write("\nTextos: ");
+            string inicial = Console.ReadLine();
+            
+            Iniciales(ref inicial);
 
+            Console.WriteLine(inicial);
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_9_1_1()
+        //ejercicio5_9_1_1
+        /* Crear un programa que genere un número al azar entre 1 y 100. El usuario tendrá 6 oportunidades para acertarlo.*/
+        static void AdivinaElNumero()
         {
-            /* Crear un programa que genere un número al azar entre 1 y 100. El usuario tendrá 6 oportunidades para acertarlo.*/
+            int intentosRestantes = 6;
+            int numIntentos = 1;
+            bool adivinado = false;
+            Random generarNumero = new Random();
+            int numAdivinar = generarNumero.Next(1, 100);
+            int numUsuario;
 
+            Console.WriteLine("ADIVINA EL UN NUMERO ENTRE 1 Y 100");
+
+            do 
+            {
+                if (intentosRestantes == 0 || adivinado == true) break;
+
+                Console.WriteLine("Intento #{0}", numIntentos);
+                Console.Write("\nAdvina: ");
+                numUsuario = Convert.ToInt16(Console.ReadLine());
+                numIntentos++;
+
+                if (numUsuario == numAdivinar) 
+                {                  
+                    Console.WriteLine("\n_________________________________________________");
+                    adivinado = true;
+                    Console.WriteLine("Felicidades! Adivinates el numero en {0} intentos", numIntentos);
+                }
+                else
+                {
+                    intentosRestantes--;
+                    Console.WriteLine("\n_________________________________________________");
+                    Console.WriteLine("Que pena, no haz adivinado, te quedan {0} intentos", intentosRestantes);              
+                }
+                if (!adivinado && intentosRestantes == 0) Console.WriteLine("Haz perdido pendejo, el numero era {0}", numAdivinar);                
+            } 
+            while (true);
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_9_1_2()
+        //ejercicio5_9_1_2
+        /* Mejorar el programa del ahorcado (4.4.8.3), para que la palabra a adivinar no sea tecleado por un segundo usuario, sino que se escoja al azar de un 
+          * "array" de palabras prefijadas (por ejemplo, nombres de ciudades).*/
+        static void Ahorcado()
         {
-            /* Mejorar el programa del ahorcado (4.4.8.3), para que la palabra a adivinar no sea tecleado por un segundo usuario, sino que se escoja al azar de un 
-             * "array" de palabras prefijadas (por ejemplo, nombres de ciudades).*/
+            int intentos = 8;
+            bool acertado = false;
+            string[] nombrePaises = {"Argentina","Rusia","Haiti","España","Brazil","China","Ucrania","Salvador","Israel","Suiza"};
+            
+            Random Selecionador = new Random();
+            int selectPais = Selecionador.Next(0,10);
+            StringBuilder  paisAdivinar = new StringBuilder(nombrePaises[selectPais].ToLower());
+            string palabraGuardada = paisAdivinar.ToString();
 
+            Console.WriteLine("_____________________________________");
+            Console.WriteLine("ADIVINA LA PALABRA.");
+            Console.WriteLine("Tematica: Nombre de paises");
+            Console.WriteLine("_____________________________________");
+
+            Console.WriteLine("\nEl pais tiene {0} letras.\n", paisAdivinar.Length);
+            for (int i = 0; i < paisAdivinar.Length; i++) 
+            {
+                paisAdivinar[i] = '-';
+            }
+            Console.Write(paisAdivinar);
+
+            do
+            {
+                acertado = false;
+                if (intentos == 0 || paisAdivinar.ToString() == palabraGuardada) break;
+
+                Console.Write("\nLetra: ");
+                char letra = Convert.ToChar(Console.ReadLine().ToLower());
+
+                for (int i = 0; i < palabraGuardada.Length; i++)
+                {
+                    if (palabraGuardada[i] == letra)
+                    {
+                        acertado = true;
+                        paisAdivinar[i] = letra;
+                    }
+                }
+                Console.WriteLine("\n{0}", paisAdivinar);
+
+                if (acertado) Console.WriteLine("\nAcertaste, Continua te falta poco");
+                else 
+                {
+                    intentos--;
+                    Console.WriteLine("No acertaste, te quedan {0} intentos", intentos);
+                }
+            } while (true);
+
+            if (paisAdivinar.ToString() == palabraGuardada) Console.WriteLine("Felicidades! Haz Adivinado.");
+            else Console.WriteLine("Pendejo! Perdiste.");
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_9_1_3()
+        
+        //ejercicio5_9_1_3
+        /* Crea un programa que "dibuje" asteriscos en 100 posiciones al azar de la pantalla . Para ayudarte para escribir en cualquier coordenada, puedes usar 
+         * un array de dos dimensiones (con tamaños 24 para el alto y 79 para el ancho), que primero rellenes y luego dibujes en pantalla.*/
+        
+        static void Pantalla()
         {
-            /* Crea un programa que "dibuje" asteriscos en 100 posiciones al azar de la pantalla . Para ayudarte para escribir en cualquier coordenada, puedes usar 
-             * un array de dos dimensiones (con tamaños 24 para el alto y 79 para el ancho), que primero rellenes y luego dibujes en pantalla.*/
+            int posicion = 0;
+            Random localisacion = new Random();
 
+            char[,] pantalla = new char[24,79];
+
+            for (int filas = 0; filas < 24; filas++) 
+            {
+                for(int columnas = 0; columnas < 79; columnas++)
+                {
+                    Console.Write(pantalla[filas,columnas] = '.');
+                }
+                Console.WriteLine();
+            }
+
+            do
+            {
+                int fila = localisacion.Next(0, 24);
+                int columna = localisacion.Next(0, 79);
+
+                pantalla[fila, columna] = '*';
+
+                posicion++;
+
+            } while (posicion < 100);
+
+            Console.WriteLine("DIBUJO DE LAS POCICIONES");
+
+            for (int filas = 0; filas < 24; filas++)
+            {
+                for (int columnas = 0; columnas < 79; columnas++)
+                {
+                    Console.Write(pantalla[filas, columnas]);
+                }
+                Console.WriteLine();
+            }
         }
 
         /*_____________________________________________________________________________________________________________*/
