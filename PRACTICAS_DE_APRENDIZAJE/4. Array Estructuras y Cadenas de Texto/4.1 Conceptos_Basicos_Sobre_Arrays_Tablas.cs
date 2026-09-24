@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._4.Array_Estructuras_y_Cadenas_de_Texto
 {
     internal class Conceptos_Basicos_Sobre_Arrays_Tablas
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void ejercicio4_1_1_1()

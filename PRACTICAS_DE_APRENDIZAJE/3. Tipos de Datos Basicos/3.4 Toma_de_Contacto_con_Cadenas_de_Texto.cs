@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._3.Tipos_de_Datos_Basicos
 {
     internal class Toma_de_Contacto_con_Cadenas_de_Texto
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void ejercicio3_4_1()

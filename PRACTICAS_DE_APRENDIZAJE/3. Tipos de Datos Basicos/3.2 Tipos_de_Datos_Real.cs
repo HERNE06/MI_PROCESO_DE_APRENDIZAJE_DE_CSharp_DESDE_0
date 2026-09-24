@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._3.Tipos_de_Datos_Basicos
 {
     internal class Tipos_de_Datos_Real
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void ejercicio3_2_2_1()

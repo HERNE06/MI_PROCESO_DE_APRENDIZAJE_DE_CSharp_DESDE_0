@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._4.Array_Estructuras_y_Cadenas_de_Texto
 {
     internal class Cadenas_de_Caracteres
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void ejercicio4_4_3_1()

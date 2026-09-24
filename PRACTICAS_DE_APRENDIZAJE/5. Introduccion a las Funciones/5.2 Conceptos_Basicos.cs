@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
 {
     internal class Conceptos_Basicos_Sobre_Funciones
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
 

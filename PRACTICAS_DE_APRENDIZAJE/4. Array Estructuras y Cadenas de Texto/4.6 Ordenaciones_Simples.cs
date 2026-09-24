@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._4._Array_Estructuras_y_Cadenas_de_Texto
 {
     internal class Ordenaciones_Simples
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void ejercicio4_6_1()

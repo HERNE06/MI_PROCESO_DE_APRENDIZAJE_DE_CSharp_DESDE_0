@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
 {
     internal class Variables_Locales_y_Globales
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         //ejercicio5_5_1

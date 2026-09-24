@@ -6,17 +6,13 @@ using System.Threading.Tasks;
 
 namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
 {
-    internal class Algunas_Funciones_Utiles
+    public class Algunas_Funciones_Utiles
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         //ejercicio5_9_1_1
         /* Crear un programa que genere un número al azar entre 1 y 100. El usuario tendrá 6 oportunidades para acertarlo.*/
-        static void AdivinaElNumero()
+        public static void AdivinaElNumero()
         {
             int intentosRestantes = 6;
             int numIntentos = 1;
@@ -58,7 +54,7 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
         //ejercicio5_9_1_2
         /* Mejorar el programa del ahorcado (4.4.8.3), para que la palabra a adivinar no sea tecleado por un segundo usuario, sino que se escoja al azar de un 
           * "array" de palabras prefijadas (por ejemplo, nombres de ciudades).*/
-        static void Ahorcado()
+        public static void Ahorcado()
         {
             int intentos = 8;
             bool acertado = false;
@@ -118,7 +114,7 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
         /* Crea un programa que "dibuje" asteriscos en 100 posiciones al azar de la pantalla . Para ayudarte para escribir en cualquier coordenada, puedes usar 
          * un array de dos dimensiones (con tamaños 24 para el alto y 79 para el ancho), que primero rellenes y luego dibujes en pantalla.*/
 
-        static void Pantalla()
+        public static void Pantalla()
         {
             int posicion = 0;
             Random localisacion = new Random();
@@ -168,7 +164,7 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
             return raiz;
         }
 
-        static void LlamarRaiz()
+        public static void LlamarRaiz()
         {
             Console.WriteLine("BUSCAR LA RAIZ DE CUALQUIER NUMERO");
             Console.Write("\nBase: ");

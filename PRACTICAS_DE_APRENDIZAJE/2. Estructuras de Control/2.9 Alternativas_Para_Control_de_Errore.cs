@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._2.Estructuras_de_Control
 {
     internal class Alternativas_Para_Control_de_Errore
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void ejercicio2_9_1()

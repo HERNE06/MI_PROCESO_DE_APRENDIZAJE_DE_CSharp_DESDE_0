@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace PRACTICAS_DE_APRENDIZAJE._1.Toma_de_contacto_con_CSharp
 {
-    internal class Operaciones_Aritmeticas_Basicas
+    public class Operaciones_Aritmeticas_Basicas
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void Ejercicio1_3_1()

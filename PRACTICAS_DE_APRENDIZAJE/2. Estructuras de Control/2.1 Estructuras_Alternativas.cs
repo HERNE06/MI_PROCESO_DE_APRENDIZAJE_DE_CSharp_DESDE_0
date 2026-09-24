@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._2.Estructuras_de_Control
 {
     internal class Estructuras_Alternativas
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void ejercicio2_1_1_1()

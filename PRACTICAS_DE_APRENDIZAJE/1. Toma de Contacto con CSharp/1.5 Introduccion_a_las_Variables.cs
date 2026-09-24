@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace PRACTICAS_DE_APRENDIZAJE._1.Toma_de_contacto_con_CSharp
 {
-    internal class Introduccion_a_las_Variables
+    public class Introduccion_a_las_Variables
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void Ejercicio1_5_3_1()

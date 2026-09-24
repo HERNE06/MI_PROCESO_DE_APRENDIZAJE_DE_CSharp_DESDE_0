@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._4.Array_Estructuras_y_Cadenas_de_Texto
 {
     internal class Estructuras_o_Registros
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         struct Musicaa_MP3

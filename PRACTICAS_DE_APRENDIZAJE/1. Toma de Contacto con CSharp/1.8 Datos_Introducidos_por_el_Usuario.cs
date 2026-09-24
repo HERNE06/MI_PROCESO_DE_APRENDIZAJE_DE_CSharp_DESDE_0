@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._1.Toma_de_contacto_con_CSharp
 {
     internal class Datos_Introducidos_por_el_Usuario
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void Ejercicio1_8_1()

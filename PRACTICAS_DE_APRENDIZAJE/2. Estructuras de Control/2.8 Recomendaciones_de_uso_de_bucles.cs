@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._2.Estructuras_de_Control
 {
     internal class Recomendaciones_de_uso_de_bucles
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void ejercicio2_8_1()

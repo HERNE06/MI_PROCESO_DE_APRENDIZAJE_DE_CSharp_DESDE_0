@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._4._Array_Estructuras_y_Cadenas_de_Texto
 {
     internal class Mas_Ejercicios
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         struct Personas

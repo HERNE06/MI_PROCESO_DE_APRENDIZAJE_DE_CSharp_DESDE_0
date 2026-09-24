@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
 {
     internal class Parametros_y_Valor_de_Retorno_Main
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         static void ejercicio5_11_1()

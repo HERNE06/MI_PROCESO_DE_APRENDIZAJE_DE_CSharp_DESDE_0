@@ -8,10 +8,6 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
 {
     internal class Valores_Devueltos_Por_Una_Funcion
     {
-        static void Main(string[] args)
-        {
-
-        }
 
         /*_____________________________________________________________________________________________________________*/
         //ejercicio5_4_1
