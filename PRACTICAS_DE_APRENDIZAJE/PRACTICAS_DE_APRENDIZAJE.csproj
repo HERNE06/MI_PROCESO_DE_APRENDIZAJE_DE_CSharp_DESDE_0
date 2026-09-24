@@ -43,11 +43,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="1. Toma de Contacto con CSharp\1.1 Escribir_Texto_En_CSharp.cs" />
+    <Compile Include="1. Toma de Contacto con CSharp\1.4 Operaciones_Aritmeticas_Basicas.cs" />
+    <Compile Include="1. Toma de Contacto con CSharp\1.5 Introduccion_a_las_Variables.cs" />
+    <Compile Include="1. Toma de Contacto con CSharp\1.6 Identificadores.cs" />
+    <Compile Include="1. Toma de Contacto con CSharp\1.8 Datos_Introducidos_por_el_Usuario.cs" />
+    <Compile Include="1. Toma de Contacto con CSharp\1.9 Pequeñas_Mejoras_Ejercicios.cs" />
+    <Compile Include="2. Estructuras de Control\2.1 Estructuras_Alternativas.cs" />
+    <Compile Include="2. Estructuras de Control\2.2 Estructuras_Repetitivas.cs" />
+    <Compile Include="2. Estructuras de Control\2.8 Recomendaciones_de_uso_de_bucles.cs" />
+    <Compile Include="2. Estructuras de Control\2.9 Alternativas_Para_Control_de_Errore.cs" />
+    <Compile Include="3. Tipos de Datos Basicos\3.1 Tipos_de_Datos_Enteros.cs" />
+    <Compile Include="3. Tipos de Datos Basicos\3.2 Tipos_de_Datos_Real.cs" />
+    <Compile Include="3. Tipos de Datos Basicos\3.3 Tipos_de_Datos_Caracter.cs" />
+    <Compile Include="3. Tipos de Datos Basicos\3.4 Toma_de_Contacto_con_Cadenas_de_Texto.cs" />
+    <Compile Include="3. Tipos de Datos Basicos\3.5 Los_Valores_Booleanos.cs" />
+    <Compile Include="4. Array Estructuras y Cadenas de Texto\4.1 Conceptos_Basicos_Sobre_Arrays_Tablas.cs" />
+    <Compile Include="4. Array Estructuras y Cadenas de Texto\4.2 Tablas_Bidimencionales.cs" />
+    <Compile Include="4. Array Estructuras y Cadenas de Texto\4.3 Estructuras_o_Registros.cs" />
+    <Compile Include="4. Array Estructuras y Cadenas de Texto\4.4 Cadenas_de_Caracteres.cs" />
+    <Compile Include="4. Array Estructuras y Cadenas de Texto\4.5 Mas_Ejercicios.cs" />
+    <Compile Include="4. Array Estructuras y Cadenas de Texto\4.6 Ordenaciones_Simples.cs" />
+    <Compile Include="5. Introduccion a las Funciones\5.10 Recursividad.cs" />
+    <Compile Include="5. Introduccion a las Funciones\5.11 Parametros_y_Valor_de_Retorno_Main.cs" />
+    <Compile Include="5. Introduccion a las Funciones\5.2 Conceptos_Basicos.cs" />
+    <Compile Include="5. Introduccion a las Funciones\5.3 Parametros_de_una_Funcion.cs" />
+    <Compile Include="5. Introduccion a las Funciones\5.4 Valores_Devueltos_Por_Una_Funcion.cs" />
+    <Compile Include="5. Introduccion a las Funciones\5.5 Variables_Locales_y_Globales.cs" />
+    <Compile Include="5. Introduccion a las Funciones\5.7 Modificando_Parametros.cs" />
+    <Compile Include="5. Introduccion a las Funciones\5.9 Algunas_Funciones_Utiles.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="6. Programacion Orientada a Objetos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
