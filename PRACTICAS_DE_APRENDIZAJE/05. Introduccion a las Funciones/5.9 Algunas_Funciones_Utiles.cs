@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -158,47 +159,94 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
         //ejercicio5_9_2_1
         /* Crea un programa que halle cualquier raíz de un número. El usuario deberá indicar el número (por ejemplo, 2) y el índice de la raíz (por ejemplo, 
              * 3 para la raíz cúbica). Pista: hallar la raíz cúbica de 2 es lo mismo que elevar 2 a 1/3.*/
-        public static double RaizCuandrada(double basee, double exponente)
+
+        public static double RaizCuandrada(int num, int indice)
         {
-            double raiz = Math.Pow(basee, exponente);
-            return raiz;
+            double resultado = Math.Pow(num, 1.0 / indice);
+            return resultado;
         }
 
         public static void LlamarRaiz()
         {
             Console.WriteLine("BUSCAR LA RAIZ DE CUALQUIER NUMERO");
-            Console.Write("\nBase: ");
-            double basee = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Expponente: ");
-            double exponente = Convert.ToDouble(Console.ReadLine());
 
-            double resultado = RaizCuandrada(basee, exponente);
-            Console.WriteLine("\n{0} elevado a {1} = {2}", basee, exponente, resultado);
+            Console.Write("\nNumero: ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Indice: ");
+            int indice = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("La raiz {0} de {1} = {2} ",indice, numero,RaizCuandrada(numero, indice));
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_9_2_2()
-        {
-            /*Haz un programa que resuelva ecuaciones de segundo grado, del tipo ax2 + bx + c = 0. El usuario deberá introducir los valores de a, b y c. Se deberá 
-             * crear una función "raicesSegundoGrado", que recibirá como parámetros los coeficientes a, b y c, así como las soluciones x1 y x2 (por referencia). 
-             * Deberá devolver los valores de las dos soluciones x1 y x2. Si alguna solución no existe, se devolverá como valor 100.000 para esa solución. 
-             * Pista: la solución se calcula con x = -b  raíz (b2 – 4·a·c) / 2·a*/
+        //ejercicio5_9_2_2
 
+        /*Haz un programa que resuelva ecuaciones de segundo grado, del tipo ax2 + bx + c = 0. El usuario deberá introducir los valores de a, b y c. Se deberá 
+          * crear una función "raicesSegundoGrado", que recibirá como parámetros los coeficientes a, b y c, así como las soluciones x1 y x2 (por referencia). 
+          * Deberá devolver los valores de las dos soluciones x1 y x2. Si alguna solución no existe, se devolverá como valor 100.000 para esa solución. 
+          * Pista: la solución se calcula con x = -b  raíz (b2 – 4·a·c) / 2·a*/
+        public static void RaicesSegundoGrado(double a, double b, double c)
+        {
+            double delta, x1, x2;
+            delta = Math.Pow(b, 2) - 4*a*c;
+            Console.WriteLine("\ndelta = {0}", delta);
+
+            if (delta > 0)
+            {
+                x1 = (-b + Math.Sqrt(delta)) / (2 * a);
+                x2 = (-b - Math.Sqrt (delta)) / (2 * a);
+                Console.WriteLine("\nx1 = {0} \n x2 = {1}", x1, x2);
+            }
+            else if (delta == 0)
+            {
+                x1 = -b / (2 * a);
+                x2 = x1;
+                Console.WriteLine("\nx1 = {0} \n x2 = {1}", x1, x2);
+            }
+            else if (delta < 0)
+            { 
+                x1 = 100000; 
+                x2 = 100000;
+                Console.WriteLine("\nx1 = {0} \nx2 = {1}", x1, x2);
+            }          
+        }
+
+        public static void LlamarRaicesSegubndoGrado() 
+        {
+            
+            Console.WriteLine("=====================================================");
+            Console.WriteLine("RESOLUCION DE ECUACION DE SEGUNDO GRANDO");
+            Console.WriteLine("=====================================================");
+
+            Console.WriteLine("\nFórmula general:");
+            Console.WriteLine("x = (-b ± √(b² - 4ac)) / 2a");
+
+            Console.WriteLine("\nIntroduce lo valores de a, b y c");
+            Console.Write("\na: ");
+            double a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("b: ");
+            double b = Convert.ToDouble(Console.ReadLine());
+            Console.Write("c: ");
+            double c = Convert.ToDouble(Console.ReadLine());
+
+            RaicesSegundoGrado(a, b, c);
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_9_2_3()
-        {
-            /*Haz un programa que pida al usuario 5 datos numéricos, los guarde en un array, pida un nuevo dato y muestre el valor del array que se encuentra 
+        //ejercicio5_9_2_3
+
+        /*Haz un programa que pida al usuario 5 datos numéricos, los guarde en un array, pida un nuevo dato y muestre el valor del array que se encuentra 
              * más cerca de ese dato, siendo mayor que él. */
+        public static void BuscarNumCercanoMayor()
+        {
 
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_9_2_4()
+        public static void ejercicio5_9_2_4()
         {
             /*Haz un programa que pida al usuario 5 datos numéricos, los guarde en un array, pida un nuevo dato y muestre el valor del array que se encuentra 
              * más cerca de ese dato en valor absoluto (es decir, el más próximo, sea mayor que él o menor que él). */
