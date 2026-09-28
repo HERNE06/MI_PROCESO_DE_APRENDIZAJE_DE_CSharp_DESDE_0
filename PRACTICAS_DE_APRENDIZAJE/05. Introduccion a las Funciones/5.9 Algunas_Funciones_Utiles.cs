@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -241,15 +242,51 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
              * más cerca de ese dato, siendo mayor que él. */
         public static void BuscarNumCercanoMayor()
         {
+            int mayor = 0;
+            int restante;
+            int[] numeros = new int[5];
+            Console.WriteLine("Introduce 5 numeros.");
+
+            for(int i = 0; i < numeros .Length; i++)
+            {
+                Console.Write("Numero {0}: ", i + 1);
+                numeros[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            Console.WriteLine("Introduce un numero para buscar el valor mayor mas cercado.");
+            Console.WriteLine("\nNumero: ");
+            int numBusqueda = Convert.ToInt32(Console.ReadLine());
+
+            for(int i = 0; i < numeros.Length; i++)
+            {
+                if(numeros[i] > numBusqueda)
+                {
+                    if(mayor == 0 || numeros[i] - numBusqueda < mayor - numBusqueda)
+                    {
+                        mayor = numeros[i];
+                    }
+                }
+            }
+            if (mayor != 0)
+            {
+                Console.WriteLine("El numero mayor mas cercano es: " + mayor);
+            }
+            else
+            {
+                Console.WriteLine("No existe un numero mayor que " + numBusqueda);
+            }
 
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        public static void ejercicio5_9_2_4()
+        //ejercicio5_9_2_4
+
+        /*Haz un programa que pida al usuario 5 datos numéricos, los guarde en un array, pida un nuevo dato y muestre el valor del array que se encuentra 
+         * más cerca de ese dato en valor absoluto (es decir, el más próximo, sea mayor que él o menor que él). */
+
+        public static void NumeroMasCercano()
         {
-            /*Haz un programa que pida al usuario 5 datos numéricos, los guarde en un array, pida un nuevo dato y muestre el valor del array que se encuentra 
-             * más cerca de ese dato en valor absoluto (es decir, el más próximo, sea mayor que él o menor que él). */
 
         }
 

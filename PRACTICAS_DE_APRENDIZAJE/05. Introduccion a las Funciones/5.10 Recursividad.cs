@@ -10,20 +10,59 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
     {
 
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_1()
-        {
-            /*Crear una función que calcule el valor de elevar un número entero a otro número entero (por ejemplo, 5 elevado a 3 = 53 = 5 ·5 ·5 = 125). 
-             * Esta función se debe crear de forma recursiva. */
+        //ejercicio5_10_1
 
+        /*Crear una función que calcule el valor de elevar un número entero a otro número entero (por ejemplo, 5 elevado a 3 = 53 = 5 ·5 ·5 = 125). 
+            * Esta función se debe crear de forma recursiva. */
+        public static double PotenciaRecursividad(double basee, double exponente)
+        {
+            if (exponente == 1)
+                return basee;
+
+             return basee * PotenciaRecursividad(basee, exponente - 1);
+        }
+
+        public static void LlamarRecursividad()
+        {
+            Console.WriteLine("POTENCIAAAAAAAAAAAAAAAAAA");
+
+            Console.Write("Base: ");
+            double basee = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Exponente: ");
+            double exponente = Convert.ToDouble(Console.ReadLine());
+
+            double resultado = PotenciaRecursividad(basee, exponente);
+
+            Console.WriteLine("{0} elevado a {1} = {2}", basee, exponente, resultado);
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_2()
-        {
-            /* Como alternativa, crear una función que calcule el valor de elevar un número entero a otro número entero de forma NO recursiva 
-             * (lo que llamaremos "de forma iterativa"), usando la orden "for".*/
+        //ejercicio5_10_2
 
+        /* Como alternativa, crear una función que calcule el valor de elevar un número entero a otro número entero de forma NO recursiva 
+          * (lo que llamaremos "de forma iterativa"), usando la orden "for".*/
+        public static int Potencia(int basee, int exponente)
+        {
+            int resultado = 1;
+            for (int i = 1; i <= exponente; i++) 
+            {
+                resultado *= basee;
+            }
+            return resultado;
+        }
+
+        public static void LlamarPotencia()
+        {
+            Console.WriteLine("POTENCIAAAAAAAAAAAAAAAAAA");
+
+            Console.Write("Base: ");
+            int basee = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Exponente: ");
+            int exponente = Convert.ToInt32(Console.ReadLine());
+
+            int resultado = Potencia(basee, exponente);
+            Console.WriteLine("{0} elevado a {1} = {2}", basee, exponente, resultado);
         }
 
         /*_____________________________________________________________________________________________________________*/

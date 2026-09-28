@@ -12,8 +12,7 @@ namespace PRACTICAS_DE_APRENDIZAJE
     {
         static void Main(string[] args)
         {
-
-            Algunas_Funciones_Utiles.BuscarNumCercanoMayor();
+            Recursividad.LlamarPotencia();
         }
     }
 }
