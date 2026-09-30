@@ -67,26 +67,52 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_3()
+        //ejercicio5_10_3
+
+        /*Crear un programa que emplee recursividad para calcular un número de la serie Fibonacci (en la que los dos primeros elementos valen 1, 
+          * y para los restantes, cada elemento es la suma de los dos anteriores). */
+        public static void  SucecionFibonacci(int num1, int num2)
         {
-            /*Crear un programa que emplee recursividad para calcular un número de la serie Fibonacci (en la que los dos primeros elementos valen 1, 
-             * y para los restantes, cada elemento es la suma de los dos anteriores). */
+            if (num2 < 500)
+                return;
+
+            Console.Write(num1 + " ");
+
+            SucecionFibonacci(num2, num1 + num2);
 
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_4()
+        //ejercicio5_10_4
+
+        /* Crear un programa que emplee recursividad para calcular la suma de los elementos de un vector.*/
+        public static int SumaVectorRecursividad(int[] numeros, int contador)
         {
-            /* Crear un programa que emplee recursividad para calcular la suma de los elementos de un vector.*/
+            if(contador == numeros.Length)
+            {
+                return 0;
+            }
+
+            return numeros[contador] + SumaVectorRecursividad(numeros, contador + 1);
+        }
+
+        public static void LlamarSumaVector() 
+        {
+            int[] numeros = { 2, 2, 2, 2, 2, 2 };
+            int resultado = SumaVectorRecursividad(numeros, 0);
+            Console.WriteLine("La suma de lso elementos es: {0}", resultado);
 
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_5()
+        //ejercicio5_10_5
+
+        /* Crear un programa que emplee recursividad para calcular el mayor de los elementos de un vector.*/
+        public static int ElementosMayorVector(int[] numeros, int mayor, int contador)
         {
-            /* Crear un programa que emplee recursividad para calcular el mayor de los elementos de un vector.*/
+
 
         }
 
