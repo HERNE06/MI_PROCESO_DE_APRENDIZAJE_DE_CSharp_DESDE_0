@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -164,44 +165,143 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
             string cadenaInvertida = CadernaInvertidaRecursica(cadena, posicion);
             Console.WriteLine(cadenaInvertida);
         }
+        
+        /*_____________________________________________________________________________________________________________*/
+        /*_____________________________________________________________________________________________________________*/
+        //ejercicio5_10_7
+
+        /*Crear, tanto de forma recursiva como de forma iterativa, una función diga si una cadena de caracteres es simétrica (un palíndromo). 
+         *Por ejemplo, "DABALEARROZALAZORRAELABAD" es un palíndromo. */
+        public static void Palindromo()
+        {
+            Console.WriteLine("ES O NO UN PALINDROMO");
+
+            bool palindromo = true;
+            string palabra = "oso";
+
+            for(int i = 0; i < palabra.Length / 2; i++) 
+            {
+                if (palabra[i] != palabra[palabra.Length - 1 - i])
+                {
+                    palindromo = false;
+                    break;
+                }
+            }
+
+            if (palindromo) Console.WriteLine("La palabra {0} es un palindromo", palabra);
+            else Console.WriteLine("La palabra {0} no es un palindromo", palabra);
+
+        }
+
+        public static bool PalindromoRecursivo(string palabra, int indice)
+        {
+            if(indice == palabra.Length / 2)
+            {
+                return true;
+            }
+
+            bool palindromo = PalindromoRecursivo(palabra, indice + 1);
+
+            if(palabra[indice] != palabra[palabra.Length - 1 - indice])
+            {
+                return false;
+            }
+
+            return palindromo;
+        }
+
+        public static void LlamarPlalindromo()
+        {
+            string palabra = "ose";
+            bool palindromo = PalindromoRecursivo(palabra, 0);
+
+            if (palindromo) Console.WriteLine("La palabra {0} es un palindromo", palabra);
+            else Console.WriteLine("La palabra {0} no es un palindromo", palabra);
+        }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_7()
+        //ejercicio5_10_8
+
+        /* Crear un programa que encuentre el máximo común divisor de dos números usando el algoritmo de Euclides: Dados dos números enteros 
+         * positivos m y n, tal que m > n, para encontrar su máximo común divisor, es decir, el mayor entero positivo que divide a ambos: 
+         * - Dividir m por n para obtener el resto r (0 ≤ r < n) ; - Si r = 0, el MCD es n.; - Si no, el máximo común divisor es MCD(n,r).*/
+        public static void MaximoComunDivisor()
         {
-            /*Crear, tanto de forma recursiva como de forma iterativa, una función diga si una cadena de caracteres es simétrica (un palíndromo). 
-             * Por ejemplo, "DABALEARROZALAZORRAELABAD" es un palíndromo. */
+
+            Console.WriteLine("MCD DE DOS NUMEROS");
+            int num1, num2, mod;
+
+            Console.WriteLine("Escribe dos numeros para daber su MCD\n");
+            Console.Write("Numero 1: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Numero 2: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            do
+            {
+                mod = num1 % num2;
+                num1 = num2;
+                num2 = mod;
+
+            } while (mod > 0);
+
+            Console.WriteLine("El MCD es {0}", num1);       
+        }
+
+        public static int MCDRecursivo(int num1, int num2)
+        {
+            if(num1 % num2 == 0)
+            {
+                return num2;
+            }
+
+            return MCDRecursivo(num2, num1 % num2);
+
+        }
+
+        public static void LlamarMCDRecursivo()
+        {
+
+            Console.WriteLine("MCD DE DOS NUMEROS");
+            int num1, num2;
+
+            Console.WriteLine("Escribe dos numeros para daber su MCD\n");
+            Console.Write("Numero 1: ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Numero 2: ");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+            int resultado = MCDRecursivo(num1, num2);
+            Console.WriteLine("El MCD es {0}", resultado);
 
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_8()
+        //ejercicio5_10_9
+
+
+        /* Crea dos funciones que sirvan para saber si un cierto texto es subcadena de una cadena. No puedes usar "Contains" 
+         * ni "IndexOf", sino que debes analizar letra a letra. Una función debe ser iterativa y la otra debe ser recursiva.*/
+        public static void EsSubCadena()
         {
-            /* Crear un programa que encuentre el máximo común divisor de dos números usando el algoritmo de Euclides: Dados dos números enteros positivos m y n, 
-             * tal que m > n, para encontrar su máximo común divisor, es decir, el mayor entero positivo que divide a ambos: 
-             * - Dividir m por n para obtener el resto r (0 ≤ r < n) ; - Si r = 0, el MCD es n.; - Si no, el máximo común divisor es MCD(n,r).*/
+
 
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_9()
-        {
-            /* Crea dos funciones que sirvan para saber si un cierto texto es subcadena de una cadena. No puedes usar "Contains" ni "IndexOf", sino que debes 
-             * analizar letra a letra. Una función debe ser iterativa y la otra debe ser recursiva.*/
+        //ejercicio5_10_10
 
-        }
-
-        /*_____________________________________________________________________________________________________________*/
-        /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_10()
+        /* Crea una función que reciba una cadena de texto, y una subcadena, y devuelva cuántas veces aparece la subcadena en la cadena, como 
+         * subsecuencia formada a partir de sus letras en orden. Por ejemplo, si recibes la palabra "Hhoola" y la subcadena "hola", la respuesta 
+         * sería 4, porque se podría tomar la primera H con la primera O (y con la L y con la A), la primera H con la segunda O, la segunda H con 
+         * la primera O, o bien la segunda H con la segunda O. Si recibes "hobla", la respuesta sería 1. Si recibes "ohla", la respuesta sería 0, 
+         * porque tras la H no hay ninguna O que permita completar la secuencia en orden.*/
+        public static void CuantasVeces()
         {
-            /* Crea una función que reciba una cadena de texto, y una subcadena, y devuelva cuántas veces aparece la subcadena en la cadena, como subsecuencia 
-             * formada a partir de sus letras en orden. Por ejemplo, si recibes la palabra "Hhoola" y la subcadena "hola", la respuesta sería 4, porque se podría 
-             * tomar la primera H con la primera O (y con la L y con la A), la primera H con la segunda O, la segunda H con la primera O, o bien la segunda H con 
-             * la segunda O. Si recibes "hobla", la respuesta sería 1. Si recibes "ohla", la respuesta sería 0, porque tras la H no hay ninguna O que permita completar 
-             * la secuencia en orden.*/
+
 
         }
     }

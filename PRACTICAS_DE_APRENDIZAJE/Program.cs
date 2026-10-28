@@ -12,7 +12,7 @@ namespace PRACTICAS_DE_APRENDIZAJE
     {
         static void Main(string[] args)
         {
-            Recursividad.LlamarCadenaInvertida();
+            Recursividad.LlamarMCDRecursivo();
         }
     }
 }
