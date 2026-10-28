@@ -110,18 +110,59 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
         //ejercicio5_10_5
 
         /* Crear un programa que emplee recursividad para calcular el mayor de los elementos de un vector.*/
-        public static int ElementosMayorVector(int[] numeros, int mayor, int contador)
+        public static int ElementosMayorVector(int[] numeros, int indice)
         {
+            if (indice == numeros.Length - 1) 
+            {
+                return numeros[indice];
+            }
+            
+            int mayor;
 
+            mayor = ElementosMayorVector(numeros, indice + 1);
 
+            if(mayor > numeros[indice]) 
+            {
+                return mayor;
+            }
+
+            return numeros[indice];
+        }
+
+        public static void LlamarElementosMayor()
+        {
+            int[] vector = { 10, 15, 50, 500, 4, 12, 25 };
+            Console.WriteLine("Cual elementos de este vectos {10, 15, 50, 8, 500, 12, 25} es mayor");
+
+            int elementoMayor = ElementosMayorVector(vector, 0);
+            Console.WriteLine("El elemento mayor es: {0}", elementoMayor);
         }
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/
-        static void ejercicio5_10_6()
-        {
-            /* Crear un programa que emplee recursividad para dar la vuelta a una cadena de caracteres (por ejemplo, a partir de "Hola" devolvería "aloH").*/
+        //ejercicio5_10_6
 
+        /* Crear un programa que emplee recursividad para dar la vuelta a una cadena de caracteres 
+         * (por ejemplo, a partir de "Hola" devolvería "aloH").*/
+        public static string CadernaInvertidaRecursica(string cadena, int posicion)
+        {
+            if (posicion == -1)
+            {
+                return "";
+            }
+
+            string cadena2 = CadernaInvertidaRecursica(cadena, posicion - 1);
+
+            return cadena[posicion] + cadena2;
+
+        }
+
+        public static void LlamarCadenaInvertida()
+        {
+            string cadena = "Hola";
+            int posicion = cadena.Length - 1;
+            string cadenaInvertida = CadernaInvertidaRecursica(cadena, posicion);
+            Console.WriteLine(cadenaInvertida);
         }
 
         /*_____________________________________________________________________________________________________________*/
