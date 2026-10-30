@@ -72,14 +72,8 @@
     <Compile Include="05. Introduccion a las Funciones\5.5 Variables_Locales_y_Globales.cs" />
     <Compile Include="05. Introduccion a las Funciones\5.7 Modificando_Parametros.cs" />
     <Compile Include="05. Introduccion a las Funciones\5.9 Algunas_Funciones_Utiles.cs" />
-    <Compile Include="06. Programacion Orientada a Objetos\6.1 Por que los Objetos.cs" />
-    <Compile Include="06. Programacion Orientada a Objetos\6.4 Como se Disenan jas Clases.cs" />
-    <Compile Include="06. Programacion Orientada a Objetos\6.5 Constructores y Destructores.cs" />
-    <Compile Include="06. Programacion Orientada a Objetos\6.3 La Herencia Visibilidad.cs" />
-    <Compile Include="06. Programacion Orientada a Objetos\6.2 Objetos y Clases en CSharp.cs" />
-    <Compile Include="06. Programacion Orientada a Objetos\6.7 Orden de Llamada de Los Constructores.cs" />
-    <Compile Include="06. Programacion Orientada a Objetos\6.6 Polimorfismo y Sobrecarga.cs" />
-    <Compile Include="06. Programacion Orientada a Objetos\6.8 Proyectos a Partir de Varias Fuentes SharpDevlop Visual Studio y MonoDevlop.cs" />
+    <Compile Include="06. Programacion Orientada a Objetos\6.1 Por que los Objetos\Persona.cs" />
+    <Compile Include="06. Programacion Orientada a Objetos\6.1 Por que los Objetos\PruebaPersona.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.2 Array de Objetos.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.3 Funciones Virtuales La Palabra Override.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.1 La Palabra Static.cs" />
@@ -93,6 +87,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="06. Programacion Orientada a Objetos\6.2 Objetos y Clases en CSharp\" />
+    <Folder Include="06. Programacion Orientada a Objetos\6.3 La Herencia Visibilidad\" />
+    <Folder Include="06. Programacion Orientada a Objetos\6.4 Como se Disenan jas Clases\" />
+    <Folder Include="06. Programacion Orientada a Objetos\6.5 Constructores y Destructores\" />
+    <Folder Include="06. Programacion Orientada a Objetos\6.6 Polimorfismo y Sobrecarga\" />
+    <Folder Include="06. Programacion Orientada a Objetos\6.7 Orden de Llamada de Los Constructores\" />
+    <Folder Include="06. Programacion Orientada a Objetos\6.8 Proyectos a Partir de Varias Fuentes SharpDevlop Visual Studio y MonoDevlop\" />
     <Folder Include="08. Manejo de Ficheros\" />
     <Folder Include="09. Persistencia de Objetos\" />
     <Folder Include="10. Acceso a Base de Datos Relacionales\" />
