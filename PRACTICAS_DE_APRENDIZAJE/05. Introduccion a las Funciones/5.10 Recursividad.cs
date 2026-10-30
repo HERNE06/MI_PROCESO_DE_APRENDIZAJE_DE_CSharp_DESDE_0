@@ -284,11 +284,24 @@ namespace PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones
 
         /* Crea dos funciones que sirvan para saber si un cierto texto es subcadena de una cadena. No puedes usar "Contains" 
          * ni "IndexOf", sino que debes analizar letra a letra. Una función debe ser iterativa y la otra debe ser recursiva.*/
-        public static void EsSubCadena()
+        public static bool EsSubCadena(string cadena, string texto)
         {
+            for(int i = 0; i < cadena.Length; i++)
+            {
+                int j = 0;
+                 while(j < texto.Length && i + j < cadena.Length && cadena[i + j] == texto[j])
+                {
+                    j++;
+                }
+
+                if (j == texto.Length) return true;
+            }
+
+            return false;
 
 
         }
+
 
         /*_____________________________________________________________________________________________________________*/
         /*_____________________________________________________________________________________________________________*/

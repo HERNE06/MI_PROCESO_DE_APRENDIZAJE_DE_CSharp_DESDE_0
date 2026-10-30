@@ -12,7 +12,8 @@ namespace PRACTICAS_DE_APRENDIZAJE
     {
         static void Main(string[] args)
         {
-            Recursividad.LlamarMCDRecursivo();
+            Parametros_y_Valor_de_Retorno_Main.CalcularVariante2(args);
+
         }
     }
 }
