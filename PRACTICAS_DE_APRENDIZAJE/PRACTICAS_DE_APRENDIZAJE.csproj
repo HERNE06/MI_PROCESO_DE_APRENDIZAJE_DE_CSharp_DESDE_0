@@ -74,6 +74,10 @@
     <Compile Include="05. Introduccion a las Funciones\5.9 Algunas_Funciones_Utiles.cs" />
     <Compile Include="06. Programacion Orientada a Objetos\6.1 Por que los Objetos\Persona.cs" />
     <Compile Include="06. Programacion Orientada a Objetos\6.1 Por que los Objetos\PruebaPersona.cs" />
+    <Compile Include="06. Programacion Orientada a Objetos\6.3 La Herencia Visibilidad\PersonaInglesa.cs" />
+    <Compile Include="06. Programacion Orientada a Objetos\6.3 La Herencia Visibilidad\PersonaItaliana.cs" />
+    <Compile Include="06. Programacion Orientada a Objetos\6.3 La Herencia Visibilidad\PruebaPersona2.cs" />
+    <Compile Include="06. Programacion Orientada a Objetos\6.3 La Herencia Visibilidad\PruebaPersona3.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.2 Array de Objetos.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.3 Funciones Virtuales La Palabra Override.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.1 La Palabra Static.cs" />
@@ -88,7 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="06. Programacion Orientada a Objetos\6.2 Objetos y Clases en CSharp\" />
-    <Folder Include="06. Programacion Orientada a Objetos\6.3 La Herencia Visibilidad\" />
     <Folder Include="06. Programacion Orientada a Objetos\6.4 Como se Disenan jas Clases\" />
     <Folder Include="06. Programacion Orientada a Objetos\6.5 Constructores y Destructores\" />
     <Folder Include="06. Programacion Orientada a Objetos\6.6 Polimorfismo y Sobrecarga\" />

@@ -5,6 +5,7 @@ using PRACTICAS_DE_APRENDIZAJE._3.Tipos_de_Datos_Basicos;
 using PRACTICAS_DE_APRENDIZAJE._4.Array_Estructuras_y_Cadenas_de_Texto;
 using PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones;
 using PRACTICAS_DE_APRENDIZAJE._06._Programacion_Orientada_a_Objetos;
+using PRACTICAS_DE_APRENDIZAJE._06._Programacion_Orientada_a_Objetos._6._1_Por_que_los_Objetos;
 
 
 namespace PRACTICAS_DE_APRENDIZAJE
