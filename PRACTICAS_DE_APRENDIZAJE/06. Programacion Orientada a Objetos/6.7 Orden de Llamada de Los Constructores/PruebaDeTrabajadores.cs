@@ -8,11 +8,11 @@ namespace PRACTICAS_DE_APRENDIZAJE._06._Programacion_Orientada_a_Objetos._6._7_O
 {
     internal class PruebaDeTrabajadores
     {
-        static void Main(string[] args)
-        {
-            Trabajador trabajador1 = new Trabajador();
-            Programador trabajador2 = new Programador();
+        //static void Main(string[] args)
+        //{
+        //    Trabajador trabajador1 = new Trabajador();
+        //    Programador trabajador2 = new Programador();
 
-        }
+        //}
     }
 }

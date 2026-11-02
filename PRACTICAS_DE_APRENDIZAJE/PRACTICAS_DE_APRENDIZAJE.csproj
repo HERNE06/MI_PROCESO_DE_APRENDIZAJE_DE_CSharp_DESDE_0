@@ -86,6 +86,7 @@
     <Compile Include="06. Programacion Orientada a Objetos\6.7 Orden de Llamada de Los Constructores\Programador.cs" />
     <Compile Include="06. Programacion Orientada a Objetos\6.7 Orden de Llamada de Los Constructores\PruebaDeTrabajadores.cs" />
     <Compile Include="06. Programacion Orientada a Objetos\6.7 Orden de Llamada de Los Constructores\Trabajador.cs" />
+    <Compile Include="06. Programacion Orientada a Objetos\6.8 Proyectos a Partir de Varias Fuentes SharpDevlop Visual Studio y MonoDevlop\Programa.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.2 Array de Objetos.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.3 Funciones Virtuales La Palabra Override.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.1 La Palabra Static.cs" />
@@ -99,7 +100,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="06. Programacion Orientada a Objetos\6.8 Proyectos a Partir de Varias Fuentes SharpDevlop Visual Studio y MonoDevlop\" />
     <Folder Include="08. Manejo de Ficheros\" />
     <Folder Include="09. Persistencia de Objetos\" />
     <Folder Include="10. Acceso a Base de Datos Relacionales\" />

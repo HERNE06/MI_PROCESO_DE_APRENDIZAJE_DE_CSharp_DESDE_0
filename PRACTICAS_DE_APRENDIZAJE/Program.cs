@@ -12,9 +12,9 @@ namespace PRACTICAS_DE_APRENDIZAJE
 {
     internal class Program
     {
-        //static void Main(string[] args)
-        //{
+        static void Main(string[] args)
+        {
 
-        //}
+        }
     }
 }
