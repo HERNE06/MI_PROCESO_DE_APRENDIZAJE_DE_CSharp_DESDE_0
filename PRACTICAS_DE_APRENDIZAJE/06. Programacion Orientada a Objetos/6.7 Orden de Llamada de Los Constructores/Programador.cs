@@ -10,7 +10,9 @@ namespace PRACTICAS_DE_APRENDIZAJE._06._Programacion_Orientada_a_Objetos._6._7_O
     {
         public Programador()
         {
-            Console.WriteLine("Soy un programador");
+            Console.WriteLine("Soy un Programador");
         }
+
     }
+    
 }

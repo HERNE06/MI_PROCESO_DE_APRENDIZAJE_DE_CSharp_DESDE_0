@@ -6,15 +6,16 @@ using PRACTICAS_DE_APRENDIZAJE._4.Array_Estructuras_y_Cadenas_de_Texto;
 using PRACTICAS_DE_APRENDIZAJE._5._Introduccion_a_las_Funciones;
 using PRACTICAS_DE_APRENDIZAJE._06._Programacion_Orientada_a_Objetos;
 using PRACTICAS_DE_APRENDIZAJE._06._Programacion_Orientada_a_Objetos._6._1_Por_que_los_Objetos;
+using PRACTICAS_DE_APRENDIZAJE._07._Utilizacion_Avanzada_de_Clases._7._1_La_Palabra_Static;
 
 
 namespace PRACTICAS_DE_APRENDIZAJE
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
 
-        }
+        //}
     }
 }

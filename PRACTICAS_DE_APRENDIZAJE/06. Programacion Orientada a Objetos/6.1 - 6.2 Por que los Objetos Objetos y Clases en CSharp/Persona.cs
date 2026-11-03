@@ -14,7 +14,7 @@ namespace PRACTICAS_DE_APRENDIZAJE._06._Programacion_Orientada_a_Objetos._6._1_P
      *" seguido de su nombre.  Crear también una clase llamada PruebaPersona. Esta clase deberá contener sólo la función 
      *Main, que creará dos objetos de tipo Persona, les asignará un nombre y les pedirá que saluden.*/
 
-    internal class Persona
+    internal class Persona 
     {
 
         protected string nombre;
