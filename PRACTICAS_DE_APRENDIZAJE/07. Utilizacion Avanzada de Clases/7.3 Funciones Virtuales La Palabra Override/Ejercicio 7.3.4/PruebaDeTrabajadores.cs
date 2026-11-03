@@ -12,24 +12,24 @@ namespace PRACTICAS_DE_APRENDIZAJE._07._Utilizacion_Avanzada_de_Clases._7._3_Fun
 
     internal class PruebaDeTrabajadores
     {
-        static void Main(string[] args)
-        {
-            //Trabajador[] trabajador = new Trabajador[5];
+        //static void Main(string[] args)
+        //{
+        //    Trabajador[] trabajador = new Trabajador[5];
 
-            //trabajador[0] = new Programador();
-            //trabajador[0].Hablar();
+        //    trabajador[0] = new Programador();
+        //    trabajador[0].Hablar();
 
-            //trabajador[1] = new Analista();
-            //trabajador[1].Hablar();
+        //    trabajador[1] = new Analista();
+        //    trabajador[1].Hablar();
 
-            //trabajador[2] = new Programador();
-            //trabajador[2].Hablar();
+        //    trabajador[2] = new Programador();
+        //    trabajador[2].Hablar();
 
-            //trabajador[3] = new Ingeniero();
-            //trabajador[3].Hablar();
+        //    trabajador[3] = new Ingeniero();
+        //    trabajador[3].Hablar();
 
-            //trabajador[4] = new IngenieroInformatico();
-            //trabajador[4].Hablar();
-        }
+        //    trabajador[4] = new IngenieroInformatico();
+        //    trabajador[4].Hablar();
+        //}
     }
 }

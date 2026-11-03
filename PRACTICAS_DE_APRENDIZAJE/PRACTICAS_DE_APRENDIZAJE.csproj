@@ -127,6 +127,18 @@
     <Compile Include="07. Utilizacion Avanzada de Clases\7.3 Funciones Virtuales La Palabra Override\Ejercicio 7.3.4\Programador.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.3 Funciones Virtuales La Palabra Override\Ejercicio 7.3.4\PruebaDeTrabajadores.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.3 Funciones Virtuales La Palabra Override\Ejercicio 7.3.4\Trabajador.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.1\Analista.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.1\Ingeniero.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.1\IngenieroInformatico.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.1\Programador.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.1\PruebaDeTrabajadores.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.1\Trabajador.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.2\Analista.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.2\Ingeniero.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.2\IngenieroInformatico.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.2\Programador.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.2\PruebaDeTrabajadores.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.2\Trabajador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,7 +146,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\" />
     <Folder Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\" />
     <Folder Include="07. Utilizacion Avanzada de Clases\7.6 Sobrecarga de Operadores\" />
     <Folder Include="08. Manejo de Ficheros\" />
