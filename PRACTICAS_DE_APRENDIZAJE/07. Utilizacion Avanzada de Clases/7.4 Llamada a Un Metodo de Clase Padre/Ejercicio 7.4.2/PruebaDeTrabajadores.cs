@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PRACTICAS_DE_APRENDIZAJE._07._Utilizacion_Avanzada_de_Clases._7._4_Llamada_a_Un_Metodo_de_Clase_Padre.Ejercicio_7._4._2
 {
-    //Ejercicio 7.4.1
+    //Ejercicio 7.4.2
 
     /*Crea una versión ampliada del ejercicio 7.4.1, en la que el constructor de todas las clases hijas se apoye en el de la clase "Trabajador".*/
 

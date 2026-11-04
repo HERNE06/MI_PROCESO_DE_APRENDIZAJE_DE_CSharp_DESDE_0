@@ -139,6 +139,12 @@
     <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.2\Programador.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.2\PruebaDeTrabajadores.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.4 Llamada a Un Metodo de Clase Padre\Ejercicio 7.4.2\Trabajador.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\Ejercicio 7.5.1\Analista.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\Ejercicio 7.5.1\Ingeniero.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\Ejercicio 7.5.1\IngenieroInformatico.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\Ejercicio 7.5.1\Progrmador.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\Ejercicio 7.5.1\PruebaDeTrabajadores.cs" />
+    <Compile Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\Ejercicio 7.5.1\Trabajador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -146,7 +152,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\" />
     <Folder Include="07. Utilizacion Avanzada de Clases\7.6 Sobrecarga de Operadores\" />
     <Folder Include="08. Manejo de Ficheros\" />
     <Folder Include="09. Persistencia de Objetos\" />
