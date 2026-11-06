@@ -14,9 +14,9 @@ namespace PRACTICAS_DE_APRENDIZAJE._07._Utilizacion_Avanzada_de_Clases._7._5_La_
 
     internal class PruebaDeTrabajadores
     {
-        static void Main(string[] args)
-        {
-
-        }
+        //static void Main(string[] args)
+        //{
+           
+        //}
     }
 }

@@ -153,9 +153,33 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="07. Utilizacion Avanzada de Clases\7.6 Sobrecarga de Operadores\" />
-    <Folder Include="08. Manejo de Ficheros\" />
-    <Folder Include="09. Persistencia de Objetos\" />
-    <Folder Include="10. Acceso a Base de Datos Relacionales\" />
+    <Folder Include="08. Manejo de Ficheros\8.01 Escritura en un Fichero de Texto\" />
+    <Folder Include="08. Manejo de Ficheros\8.02 Lectura de un Fichero de Texto\" />
+    <Folder Include="08. Manejo de Ficheros\8.03 Lectura hasta el Final del Fichero\" />
+    <Folder Include="08. Manejo de Ficheros\8.04 Añadir a un Fichero Existente\" />
+    <Folder Include="08. Manejo de Ficheros\8.05 Ficheros en Otras Carpetas\" />
+    <Folder Include="08. Manejo de Ficheros\8.06 Saber si un Fichero Existe\" />
+    <Folder Include="08. Manejo de Ficheros\8.07 Mas Comprobaciones de Errores Exepciones\" />
+    <Folder Include="08. Manejo de Ficheros\8.08 Conceptos Basicos Sobre Ficheros\" />
+    <Folder Include="08. Manejo de Ficheros\8.09 Leer Datos Basicos de un Fichero Binario\" />
+    <Folder Include="08. Manejo de Ficheros\8.10 Leer Bloques de Datos de un Fichero Binario\" />
+    <Folder Include="08. Manejo de Ficheros\8.11 La Posicion en el Fichero\" />
+    <Folder Include="08. Manejo de Ficheros\8.12 Escribir en un Fichero Binario\" />
+    <Folder Include="08. Manejo de Ficheros\8.13 Ejemplo Leer Informacion de un Fichero BMP\" />
+    <Folder Include="08. Manejo de Ficheros\8.14 Leer y Escribir en un Mismo Fichero Binario\" />
+    <Folder Include="09. Persistencia de Objetos\9.1 Por que la Persitencia\" />
+    <Folder Include="09. Persistencia de Objetos\9.2 Creando un Objeto Serializable\" />
+    <Folder Include="09. Persistencia de Objetos\9.3 Empleando Clases Auxiliares\" />
+    <Folder Include="09. Persistencia de Objetos\9.4 Volcando a un Fichero de Texto\" />
+    <Folder Include="10. Acceso a Base de Datos Relacionales\10.1 Nociones Minimas de Base de Datos Relaciones\" />
+    <Folder Include="10. Acceso a Base de Datos Relacionales\10.2 Nociones Minimas de Lenguaje SQL\" />
+    <Folder Include="10. Acceso a Base de Datos Relacionales\10.3 Acceso a Bases de Datos con SQLite\" />
+    <Folder Include="10. Acceso a Base de Datos Relacionales\10.4 Un Poco mas de SQL Varias Tablas\" />
+    <Folder Include="10. Acceso a Base de Datos Relacionales\10.5 Borrado y Modificacion de datos\" />
+    <Folder Include="10. Acceso a Base de Datos Relacionales\10.6 Grupos\" />
+    <Folder Include="10. Acceso a Base de Datos Relacionales\10.7 Operaciones Matematicas con los Datos\" />
+    <Folder Include="10. Acceso a Base de Datos Relacionales\10.8 Un Ejemplo Completo con CSharp y SQLite\" />
+    <Folder Include="10. Acceso a Base de Datos Relacionales\10.9 Nociones Minimas de Acceso desde un Entorno Grafico\" />
     <Folder Include="11. Punteros y Gestion Dinamica de Memoria\" />
     <Folder Include="12. Algunas Bibliotecas Adicionales de Uso Frecuente\" />
     <Folder Include="13. Otras Caracteristicas Avanzadas\" />
