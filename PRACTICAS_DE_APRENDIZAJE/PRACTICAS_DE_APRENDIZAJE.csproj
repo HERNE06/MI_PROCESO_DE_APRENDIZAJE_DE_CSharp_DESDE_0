@@ -145,6 +145,10 @@
     <Compile Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\Ejercicio 7.5.1\Progrmador.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\Ejercicio 7.5.1\PruebaDeTrabajadores.cs" />
     <Compile Include="07. Utilizacion Avanzada de Clases\7.5 La Palabra This el Objeto Actual\Ejercicio 7.5.1\Trabajador.cs" />
+    <Compile Include="08. Manejo de Ficheros\8.01 Escritura en un Fichero de Texto\CrearFichero.cs" />
+    <Compile Include="08. Manejo de Ficheros\8.02 Lectura de un Fichero de Texto\LeerFichero.cs" />
+    <Compile Include="08. Manejo de Ficheros\8.03 Lectura hasta el Final del Fichero\FicheroPorNombre.cs" />
+    <Compile Include="08. Manejo de Ficheros\8.03 Lectura hasta el Final del Fichero\Frases.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -153,9 +157,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="07. Utilizacion Avanzada de Clases\7.6 Sobrecarga de Operadores\" />
-    <Folder Include="08. Manejo de Ficheros\8.01 Escritura en un Fichero de Texto\" />
-    <Folder Include="08. Manejo de Ficheros\8.02 Lectura de un Fichero de Texto\" />
-    <Folder Include="08. Manejo de Ficheros\8.03 Lectura hasta el Final del Fichero\" />
     <Folder Include="08. Manejo de Ficheros\8.04 Añadir a un Fichero Existente\" />
     <Folder Include="08. Manejo de Ficheros\8.05 Ficheros en Otras Carpetas\" />
     <Folder Include="08. Manejo de Ficheros\8.06 Saber si un Fichero Existe\" />
