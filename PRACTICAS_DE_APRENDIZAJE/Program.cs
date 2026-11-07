@@ -10,6 +10,7 @@ using PRACTICAS_DE_APRENDIZAJE._07._Utilizacion_Avanzada_de_Clases._7._1_La_Pala
 using PRACTICAS_DE_APRENDIZAJE._08._Manejo_de_Ficheros._8._01_Escritura_en_un_Fichero_de_Texto;
 using PRACTICAS_DE_APRENDIZAJE._08._Manejo_de_Ficheros._8._02_Lectura_de_un_Fichero_de_Texto;
 using PRACTICAS_DE_APRENDIZAJE._08._Manejo_de_Ficheros._8._03_Lectura_hasta_el_Final_del_Fichero;
+using PRACTICAS_DE_APRENDIZAJE._08._Manejo_de_Ficheros._8._04_Añadir_a_un_Fichero_Existente;
 
 
 namespace PRACTICAS_DE_APRENDIZAJE
@@ -18,7 +19,7 @@ namespace PRACTICAS_DE_APRENDIZAJE
     {
         static void Main(string[] args)
         {
-            FicheroPorNombre.FxNombre();
+            AgregaAlFichero.FicheroAgregar();
         }
     }
 }
