@@ -18,7 +18,35 @@ namespace PRACTICAS_DE_APRENDIZAJE._08._Manejo_de_Ficheros._8._03_Lectura_hasta_
     {
         public static void FxNombre()
         {
+            Console.WriteLine("BUSCAR FICHERO POR NOMBRE");
 
+            string linea, ficheroBuscado,enter;
+
+            Console.Write("Nombre del Fichero: ");
+            ficheroBuscado = Console.ReadLine();
+
+            StreamReader fichero = File.OpenText(ficheroBuscado);
+
+            do
+            {              
+                for (int i = 0; i < 25; i++)
+                {
+                    linea = fichero.ReadLine();
+                    if (linea != null)
+                    {
+                        Console.WriteLine(linea);
+                    }
+                    if (linea == null) 
+                    { 
+                        fichero.Close();
+                        break;
+                    }
+                }
+
+                Console.WriteLine("\nPreciona Enter para seguir mostrando.");
+                enter = Console.ReadLine();
+                
+            } while (enter == "");
         }
     }
 }
