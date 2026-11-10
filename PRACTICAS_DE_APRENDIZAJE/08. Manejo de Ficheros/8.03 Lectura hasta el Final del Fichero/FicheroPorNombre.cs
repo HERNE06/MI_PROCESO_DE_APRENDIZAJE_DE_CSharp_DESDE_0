@@ -16,7 +16,7 @@ namespace PRACTICAS_DE_APRENDIZAJE._08._Manejo_de_Ficheros._8._03_Lectura_hasta_
 
     internal class FicheroPorNombre
     {
-        public static void FxNombre()
+        public static void Ejercio8_3_2()
         {
             Console.WriteLine("BUSCAR FICHERO POR NOMBRE");
 
